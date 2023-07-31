@@ -186,6 +186,7 @@
         }
         @media (max-width: 1200px) {
             // CSS responsive tablet
+            padding-top: 100px;
             &_content {
                 grid-template-columns: 1fr;
                 &-wrap {

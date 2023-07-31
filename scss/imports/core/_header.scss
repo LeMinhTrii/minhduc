@@ -132,14 +132,17 @@
             }
         }
     }
-    @media (max-width: 1120px) {
+    @media (max-width: 1200px) {
         // CSS responsive tablet
+        position: fixed;
+        width: 100%;
+        z-index: 10000;
+        top: 0;
         &_content {
             justify-content: center;
             position: relative;
             height: 100px;
             &-logo {
-                margin-top: 10px;
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
