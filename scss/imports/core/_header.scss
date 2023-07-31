@@ -136,8 +136,13 @@
         // CSS responsive tablet
         &_content {
             justify-content: center;
+            position: relative;
+            height: 100px;
             &-logo {
                 margin-top: 10px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
                 padding-left: clamp(15px, calc(((100vw - var(--container-width)) / 2)), 9999px);
             }
             &-wrap {
