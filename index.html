@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- <meta name="viewport" content="width=1200px" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Đập Phá Minh Đức</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="dest/style.min.css">
+    <link rel="stylesheet" href="dest/fonts.css">
+</head>
+
+<!-- Mỗi body của mỗi page nên có class ví dụ homepage, aboutpage, contactpage... -->
+
+<body class="homepage">
+    <!-- HEADER -->
+    <header class="header">
+        <!-- <div class="container"> -->
+        <div class="header_content">
+            <a href="./" class="header_content-logo">
+                <img src="./img/logo.png" alt="">
+            </a>
+            <div class="header_content-wrap">
+                <div class="top">
+                    <h2 class="name">ĐẬP PHÁ MINH ĐỨC</h2>
+                    <div class="wrap-right">
+                        <div class="phone">
+                            <img src="./img/telephone-call (3) 1.svg" alt="">
+                            <span class="number">09 75 457 809</span>
+                        </div>
+                        <div class="social">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.25 1.5H3.75C3.15326 1.5 2.58097 1.73705 2.15901 2.15901C1.73705 2.58097 1.5 3.15326 1.5 3.75L1.5 20.25C1.5 20.8467 1.73705 21.419 2.15901 21.841C2.58097 22.2629 3.15326 22.5 3.75 22.5H10.1836V15.3605H7.23047V12H10.1836V9.43875C10.1836 6.52547 11.918 4.91625 14.5744 4.91625C15.8466 4.91625 17.1769 5.14313 17.1769 5.14313V8.0025H15.7111C14.2669 8.0025 13.8164 8.89875 13.8164 9.81797V12H17.0405L16.5248 15.3605H13.8164V22.5H20.25C20.8467 22.5 21.419 22.2629 21.841 21.841C22.2629 21.419 22.5 20.8467 22.5 20.25V3.75C22.5 3.15326 22.2629 2.58097 21.841 2.15901C21.419 1.73705 20.8467 1.5 20.25 1.5Z"
+                                    fill="white" />
+                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0047 6.60937C9.02341 6.60937 6.61873 9.01406 6.61873 11.9953C6.61873 14.9766 9.02341 17.3812 12.0047 17.3812C14.9859 17.3812 17.3906 14.9766 17.3906 11.9953C17.3906 9.01406 14.9859 6.60937 12.0047 6.60937ZM12.0047 15.4969C10.0781 15.4969 8.5031 13.9266 8.5031 11.9953C8.5031 10.0641 10.0734 8.49375 12.0047 8.49375C13.9359 8.49375 15.5062 10.0641 15.5062 11.9953C15.5062 13.9266 13.9312 15.4969 12.0047 15.4969ZM18.8672 6.38906C18.8672 7.0875 18.3047 7.64531 17.6109 7.64531C16.9125 7.64531 16.3547 7.08281 16.3547 6.38906C16.3547 5.69531 16.9172 5.13281 17.6109 5.13281C18.3047 5.13281 18.8672 5.69531 18.8672 6.38906ZM22.4344 7.66406C22.3547 5.98125 21.9703 4.49062 20.7375 3.2625C19.5094 2.03437 18.0187 1.65 16.3359 1.56562C14.6015 1.46719 9.4031 1.46719 7.66873 1.56562C5.9906 1.64531 4.49998 2.02969 3.26716 3.25781C2.03435 4.48594 1.65466 5.97656 1.57029 7.65937C1.47185 9.39375 1.47185 14.5922 1.57029 16.3266C1.64998 18.0094 2.03435 19.5 3.26716 20.7281C4.49998 21.9562 5.98591 22.3406 7.66873 22.425C9.4031 22.5234 14.6015 22.5234 16.3359 22.425C18.0187 22.3453 19.5094 21.9609 20.7375 20.7281C21.9656 19.5 22.35 18.0094 22.4344 16.3266C22.5328 14.5922 22.5328 9.39844 22.4344 7.66406ZM20.1937 18.1875C19.8281 19.1062 19.1203 19.8141 18.1969 20.1844C16.814 20.7328 13.5328 20.6062 12.0047 20.6062C10.4765 20.6062 7.1906 20.7281 5.81248 20.1844C4.89373 19.8187 4.18591 19.1109 3.8156 18.1875C3.26716 16.8047 3.39373 13.5234 3.39373 11.9953C3.39373 10.4672 3.27185 7.18125 3.8156 5.80312C4.18123 4.88437 4.88904 4.17656 5.81248 3.80625C7.19529 3.25781 10.4765 3.38437 12.0047 3.38437C13.5328 3.38437 16.8187 3.2625 18.1969 3.80625C19.1156 4.17187 19.8234 4.87969 20.1937 5.80312C20.7422 7.18594 20.6156 10.4672 20.6156 11.9953C20.6156 13.5234 20.7422 16.8094 20.1937 18.1875Z"
+                                    fill="white" />
+                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.9023 6.50346C22.6406 5.51804 21.8695 4.74196 20.8904 4.47858C19.1159 4 12 4 12 4C12 4 4.88415 4 3.10953 4.47858C2.13048 4.742 1.3594 5.51804 1.09769 6.50346C0.622192 8.28958 0.622192 12.0162 0.622192 12.0162C0.622192 12.0162 0.622192 15.7427 1.09769 17.5289C1.3594 18.5143 2.13048 19.258 3.10953 19.5214C4.88415 20 12 20 12 20C12 20 19.1158 20 20.8904 19.5214C21.8695 19.258 22.6406 18.5143 22.9023 17.5289C23.3778 15.7427 23.3778 12.0162 23.3778 12.0162C23.3778 12.0162 23.3778 8.28958 22.9023 6.50346ZM9.67269 15.3996V8.63271L15.6202 12.0162L9.67269 15.3996Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li class="active"><a href="#">TRANG CHỦ</a></li>
+                        <li><a href="#">GIỚI THIỆU</a></li>
+                        <li><a href="#">DỊCH VỤ</a></li>
+                        <li><a href="#">CÔNG TRÌNH</a></li>
+                        <li><a href="#">TIN TỨC</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                    </ul>
+                    <div class="search">
+                        <input type="text" placeholder="Tìm kiếm ...">
+                        <img src="./img/loupe (5) 1.svg" alt="">
+                    </div>
+                    <div class="abssvg">
+                        <!-- <img src="./img/Rectangle 2.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a href="#" class="menu__item">TRANG CHỦ</a></li>
+                    <li><a href="#" class="menu__item">GIỚI THIỆU</a></li>
+                    <li><a href="#" class="menu__item">DỊCH VỤ</a></li>
+                    <li><a href="#" class="menu__item">CÔNG TRÌNH</a></li>
+                    <li><a href="#" class="menu__item">TIN TỨC</a></li>
+                    <li><a href="#" class="menu__item">LIÊN HỆ</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- Example HTML -->
+        <section class="banner">
+            <div class="banner_content">
+                <div class="banner_content-wrap"
+                    data-flickity='{ "cellAlign": "left", "contain": true,"freeScroll": true, "wrapAround": true, "pageDots": false,"autoPlay": 2500,"prevNextButtons": false }'>
+                    <div class="item">
+                        <div class="picture">
+                            <div class="thumnail">
+                                <img src="./img/Polygon 1.png" alt="">
+                            </div>
+                            <div class="thumnail">
+                                <img src="./img/Polygon 2.png" alt="">
+                            </div>
+                            <div class="thumnail">
+                                <img src="./img/Polygon 3.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="textbox">
+                            <h2 class="heading --yl">ĐẬP PHÁ MINH ĐỨC</h2>
+                            <p class="text">Chuyên</p>
+                            <p class="title --yl">ĐỤC PHÁ BÊ TÔNG</p>
+                            <p class="title --yl">PHÁ DỠ NHÀ CŨ - CÔNG TRÌNH</p>
+                            <p class="title --yl">THU MUA XÁC NHÀ</p>
+                            <p class="title --yl">SAN LẤP MẶT BẰNG</p>
+                            <p class="hotline">Hotline: 09 75 457 809</p>
+                            <p class="slogan">UY TÍN - CHUYÊN NGHIỆP - CHẤT LƯỢNG</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="picture">
+                            <div class="thumnail">
+                                <img src="./img/Polygon 1.png" alt="">
+                            </div>
+                            <div class="thumnail">
+                                <img src="./img/Polygon 2.png" alt="">
+                            </div>
+                            <div class="thumnail">
+                                <img src="./img/Polygon 3.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="textbox">
+                            <h2 class="heading --yl">ĐẬP PHÁ MINH ĐỨC</h2>
+                            <p class="text">Chuyên</p>
+                            <p class="title --yl">ĐỤC PHÁ BÊ TÔNG</p>
+                            <p class="title --yl">PHÁ DỠ NHÀ CŨ - CÔNG TRÌNH</p>
+                            <p class="title --yl">THU MUA XÁC NHÀ</p>
+                            <p class="title --yl">SAN LẤP MẶT BẰNG</p>
+                            <p class="hotline">Hotline: 09 75 457 809</p>
+                            <p class="slogan">UY TÍN - CHUYÊN NGHIỆP - CHẤT LƯỢNG</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="picture">
+                            <div class="thumnail">
+                                <img src="./img/Polygon 1.png" alt="">
+                            </div>
+                            <div class="thumnail">
+                                <img src="./img/Polygon 2.png" alt="">
+                            </div>
+                            <div class="thumnail">
+                                <img src="./img/Polygon 3.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="textbox">
+                            <h2 class="heading --yl">ĐẬP PHÁ MINH ĐỨC</h2>
+                            <p class="text">Chuyên</p>
+                            <p class="title --yl">ĐỤC PHÁ BÊ TÔNG</p>
+                            <p class="title --yl">PHÁ DỠ NHÀ CŨ - CÔNG TRÌNH</p>
+                            <p class="title --yl">THU MUA XÁC NHÀ</p>
+                            <p class="title --yl">SAN LẤP MẶT BẰNG</p>
+                            <p class="hotline">Hotline: 09 75 457 809</p>
+                            <p class="slogan">UY TÍN - CHUYÊN NGHIỆP - CHẤT LƯỢNG</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_content-infor">
+                    <img src="./img/logo.png" alt="" class="logo">
+                    <div class="list-infor">
+                        <div class="item">
+                            <img src="./img/phone-call (4) 1.svg" alt="">
+                            <p class="text bold">09 75 457 809</p>
+                        </div>
+                        <div class="item">
+                            <img src="./img/phone-call (4) 1 (1).svg" alt="">
+                            <p class="text">dapphathaodominhduc @gmail.com</p>
+                        </div>
+                        <div class="item">
+                            <img src="./img/phone-call (4) 1 (2).svg" alt="">
+                            <p class="text">dapphaminhduc.com</p>
+                        </div>
+                    </div>
+                    <p class="desc">
+                        Hỗ trợ tư vấn: <span class="bold"> 24/7</span>
+                    </p>
+                    <p class="desc">Hãy liên hệ ngay với chúng tôi!</p>
+                </div>
+            </div>
+            <div class="textrun">
+                <div class="container">
+                    <marquee width="500px" direction="left" height="100%">
+                        Kính chào Quý khách đã đến với website của chúng tôi!
+                    </marquee>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about_content">
+                    <div class="about_content-thumnail">
+                        <img src="./img/simg-gt.png" alt="">
+                    </div>
+                    <div class="about_content-textbox">
+                        <p class="text">GIỚI THIỆU</p>
+                        <h3 class="title">ĐẬP PHÁ MINH ĐỨC</h3>
+                        <p class="desc">Với 11 năm hoạt động trong lĩnh vực khoan cắt bê tông, chúng tôi ngày càng trở
+                            thành công ty xây dựng phát triển bền vững trở thành một trong các doanh nghiệp uy tín trong
+                            lĩnh vực xây dựng. Với trang thiết bị hiện đại cộng với
+                            đội ngũ công nhân viên nhiệt huyết, làm việc có trách nhiệm chắc chắn sẽ làm hài lòng tất cả
+                            mọi khách hàng, kể cả những khách hàng khó tính nhất…</p>
+                        <a href="#" class="btn_more">
+                            <span>Xem thêm</span>
+                            <img src="./img/next (8) 1.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="product_content">
+                    <div class="product_content-textbox">
+                        <div class="heading">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="topsvg" width="345" height="56"
+                                viewBox="0 0 345 56" fill="none">
+                                <path d="M0.5 3.5L3 1H343L295 55H287.5" stroke="black" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 441 63"
+                                fill="none" class="bgr">
+                                <path
+                                    d="M55.0518 0.452393H110.104H220.207H330.311H385.363H440.415L385.363 62.4365H330.311H220.207H0L55.0518 0.452393Z"
+                                    fill="#F5880B" />
+                            </svg>
+                            <span>ĐẬP PHÁ THÁO DỠ</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="botsvg" width="320" height="46"
+                                viewBox="0 0 320 46" fill="none">
+                                <path d="M42 1L2 45H320" stroke="black" />
+                            </svg>
+                        </div>
+                        <div class="line">
+                            <img src="./img/excavator-collection_23-2148646267 (1) 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product_content-box">
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">THÁO DỠ CHUNG CƯ</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11 (1).jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">THÁO DỠ NHÀ CŨ</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11 (2).jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">THÁO DỠ NHÀ 2 TẦNG</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11 (3).jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">THÁO DỠ NHÀ LỚN</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="product_content-btn">
+                        <span>Xem thêm</span>
+                        <img src="./img/next (8) 1.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="product_content">
+                    <div class="product_content-textbox">
+                        <div class="heading">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="topsvg" width="345" height="56"
+                                viewBox="0 0 345 56" fill="none">
+                                <path d="M0.5 3.5L3 1H343L295 55H287.5" stroke="black" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 441 63"
+                                fill="none" class="bgr">
+                                <path
+                                    d="M55.0518 0.452393H110.104H220.207H330.311H385.363H440.415L385.363 62.4365H330.311H220.207H0L55.0518 0.452393Z"
+                                    fill="#F5880B" />
+                            </svg>
+                            <span>KHOAN CẮT BÊ TÔNG</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="botsvg" width="320" height="46"
+                                viewBox="0 0 320 46" fill="none">
+                                <path d="M42 1L2 45H320" stroke="black" />
+                            </svg>
+                        </div>
+                        <div class="line">
+                            <img src="./img/excavator-collection_23-2148646267 (1) 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product_content-box">
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11 (4).jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">KHOAN CẮT CỘT BÊ TÔNG</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11 (5).jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">KHOAN CẮT NỀN NHÀ CŨ</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11 (6).jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">KHOAN CẮT NỀN TẦNG 2</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11 (7).jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">KHOAN MÓNG NHÀ</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#" class="product_content-btn">
+                        <span>Xem thêm</span>
+                        <img src="./img/next (8) 1.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="product_content">
+                    <div class="product_content-textbox dfr">
+                        <div class="heading">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="topsvg" width="658" height="56"
+                                viewBox="0 0 658 56" fill="none">
+                                <path d="M602.5 55.5H610L656.5 1H4.5L0.5 5.5" stroke="black" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="705" height="57" viewBox="0 0 705 57"
+                                fill="none" class="bgr">
+                                <path d="M51.5 0.5H87.5H175H350H704.5L657.5 56.5H525H350H0L51.5 0.5Z" fill="#F5880B" />
+                            </svg>
+                            <span class="widthmax">SAN LẤP MẶT BẰNG - THU MUA XÁC NHÀ</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="botsvg" width="634" height="44"
+                                viewBox="0 0 634 44" fill="none">
+                                <path d="M41 0.5L1.5 43H634" stroke="black" />
+                            </svg>
+                        </div>
+                        <div class="line">
+                            <img src="./img/excavator-collection_23-2148646267 (1) 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product_content-box">
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11 (8).jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">SAN LẤP MẶT BẰNG</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11 (9).jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">SAN LẤP MẶT BẰNG</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11 (10).jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">THU MUA XÁC NHÀ</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 11 (11).jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">THU MUA SẮT VỤN</p>
+                                <p class="desc">Sự lựa chọn đáng tin cậy</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#" class="product_content-btn">
+                        <span>Xem thêm</span>
+                        <img src="./img/next (8) 1.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="why">
+            <div class="container">
+                <div class="why_content">
+                    <div class="why_content-box">
+                        <div class="item">
+                            <img src="./img/excavator (3) 1.svg" alt="">
+                            <p class="name">Máy Móc Hiện Đại</p>
+                        </div>
+                        <div class="item">
+                            <img src="./img/excavator (3) 1 (1).svg" alt="">
+                            <p class="name">Chi Phí Hợp Lý</p>
+                        </div>
+                        <div class="item">
+                            <img src="./img/excavator (3) 1 (2).svg" alt="">
+                            <p class="name">Hoàn Thành Đúng Hẹn</p>
+                        </div>
+                        <div class="item">
+                            <img src="./img/excavator (3) 1 (3).svg" alt="">
+                            <p class="name">Đảm Bảo An Toàn Phá Dỡ</p>
+                        </div>
+                    </div>
+                    <div class="why_content-textbox">
+                        <div class="left">
+                            <p class="text">VÌ SAO LẠI CHỌN MINH ĐỨC</p>
+                            <h2 class="title">CHÚNG TÔI CÓ</h2>
+                            <div class="wrap">
+                                <p class="name">Thế Mạnh Máy Móc</p>
+                                <div class="item">
+                                    <img src="./img/select 1.svg" alt="">
+                                    <p class="desc">Máy đục bê tông xe cẩu</p>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/select 1.svg" alt="">
+                                    <p class="desc">Máy xúc đào bánh xích</p>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/select 1.svg" alt="">
+                                    <p class="desc">Xe ben chuyên dụng chở xà bần</p>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/select 1.svg" alt="">
+                                    <p class="desc">Máy đục bê tông cầm tay</p>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/select 1.svg" alt="">
+                                    <p class="desc">Giải phóng mặt bằng cho các dự án xây dựng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="./img/Rectangle 14.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="news_content">
+                    <div class="news_content-textbox">
+                        <h2 class="titles">TIN TỨC</h2>
+                        <p class="desc">Cập nhật tin mới hàng ngày!</p>
+                        <div class="box scroller">
+                            <div class="item">
+                                <div class="thumnail">
+                                    <img src="./img/Rectangle 36.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Dịch vụ dỡ nhà trọn gói từ a đến z</h3>
+                                    <p class="desc">Kiến trúc nhà gỗ có độ bền, hiện nay công nghệ xử lý mối mọt cực kỳ
+                                        cao từ đó mức độ hư hỏng cũng giảm thiểu đáng kể...</p>
+                                    <a href="#" class="btn-more">Đọc thêm</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumnail">
+                                    <img src="./img/Rectangle 36.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Dịch vụ dỡ nhà trọn gói từ a đến z</h3>
+                                    <p class="desc">Kiến trúc nhà gỗ có độ bền, hiện nay công nghệ xử lý mối mọt cực kỳ
+                                        cao từ đó mức độ hư hỏng cũng giảm thiểu đáng kể...</p>
+                                    <a href="#" class="btn-more">Đọc thêm</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumnail">
+                                    <img src="./img/Rectangle 36.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Dịch vụ dỡ nhà trọn gói từ a đến z</h3>
+                                    <p class="desc">Kiến trúc nhà gỗ có độ bền, hiện nay công nghệ xử lý mối mọt cực kỳ
+                                        cao từ đó mức độ hư hỏng cũng giảm thiểu đáng kể...</p>
+                                    <a href="#" class="btn-more">Đọc thêm</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumnail">
+                                    <img src="./img/Rectangle 36.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Dịch vụ dỡ nhà trọn gói từ a đến z</h3>
+                                    <p class="desc">Kiến trúc nhà gỗ có độ bền, hiện nay công nghệ xử lý mối mọt cực kỳ
+                                        cao từ đó mức độ hư hỏng cũng giảm thiểu đáng kể...</p>
+                                    <a href="#" class="btn-more">Đọc thêm</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumnail">
+                                    <img src="./img/Rectangle 36.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Dịch vụ dỡ nhà trọn gói từ a đến z</h3>
+                                    <p class="desc">Kiến trúc nhà gỗ có độ bền, hiện nay công nghệ xử lý mối mọt cực kỳ
+                                        cao từ đó mức độ hư hỏng cũng giảm thiểu đáng kể...</p>
+                                    <a href="#" class="btn-more">Đọc thêm</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumnail">
+                                    <img src="./img/Rectangle 36.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Dịch vụ dỡ nhà trọn gói từ a đến z</h3>
+                                    <p class="desc">Kiến trúc nhà gỗ có độ bền, hiện nay công nghệ xử lý mối mọt cực kỳ
+                                        cao từ đó mức độ hư hỏng cũng giảm thiểu đáng kể...</p>
+                                    <a href="#" class="btn-more">Đọc thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_content-box">
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 37.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 40.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 41.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/Rectangle 42.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="contact_content">
+                    <div class="contact_content-form">
+                        <div class="heading">
+                            <p class="text">ĐỂ LẠI THÔNG TIN TƯ VẤN</p>
+                            <p class="title">LIÊN HỆ</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Họ và tên:">
+                            <input type="number" placeholder="Số điện thoại:" min="0">
+                            <textarea name="" id="" placeholder="Ghi chú:"></textarea>
+                            <button type="submit"> Gửi ngay</button>
+                        </div>
+                    </div>
+                    <div class="contact_content-video">
+                        <p class="title">VIDEO</p>
+                        <div class="desc">
+                            <img src="./img/next (9) 1.svg" alt="">
+                            <span class="text">Video phá vỡ nhà cũ 2 tầng.</span>
+                        </div>
+                        <div class="box">
+                            <div class="item">
+                                <div class="thumnail">
+                                    <img src="./img/Rectangle 46.jpg" alt="">
+                                </div>
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_31_2)" filter="url(#filter0_d_31_2)">
+                                        <path
+                                            d="M24 0.625C13.2969 0.625 4.625 9.29688 4.625 20C4.625 30.7031 13.2969 39.375 24 39.375C34.7031 39.375 43.375 30.7031 43.375 20C43.375 9.29688 34.7031 0.625 24 0.625ZM33.0391 21.875L19.2891 29.7656C18.0547 30.4531 16.5 29.5703 16.5 28.125V11.875C16.5 10.4375 18.0469 9.54688 19.2891 10.2344L33.0391 18.5938C34.3203 19.3125 34.3203 21.1641 33.0391 21.875Z"
+                                            fill="white" fill-opacity="0.8" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_31_2" x="0" y="0" width="48" height="48"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dy="4" />
+                                            <feGaussianBlur stdDeviation="2" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_31_2" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_31_2"
+                                                result="shape" />
+                                        </filter>
+                                        <clipPath id="clip0_31_2">
+                                            <rect width="40" height="40" fill="white" transform="translate(4)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                            <div class="item">
+                                <div class="thumnail">
+                                    <img src="./img/Rectangle 48.jpg" alt="">
+                                </div>
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_31_2)" filter="url(#filter0_d_31_2)">
+                                        <path
+                                            d="M24 0.625C13.2969 0.625 4.625 9.29688 4.625 20C4.625 30.7031 13.2969 39.375 24 39.375C34.7031 39.375 43.375 30.7031 43.375 20C43.375 9.29688 34.7031 0.625 24 0.625ZM33.0391 21.875L19.2891 29.7656C18.0547 30.4531 16.5 29.5703 16.5 28.125V11.875C16.5 10.4375 18.0469 9.54688 19.2891 10.2344L33.0391 18.5938C34.3203 19.3125 34.3203 21.1641 33.0391 21.875Z"
+                                            fill="white" fill-opacity="0.8" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_31_2" x="0" y="0" width="48" height="48"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dy="4" />
+                                            <feGaussianBlur stdDeviation="2" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_31_2" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_31_2"
+                                                result="shape" />
+                                        </filter>
+                                        <clipPath id="clip0_31_2">
+                                            <rect width="40" height="40" fill="white" transform="translate(4)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                            <div class="item">
+                                <div class="thumnail">
+                                    <img src="./img/Rectangle 49.jpg" alt="">
+                                </div>
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_31_2)" filter="url(#filter0_d_31_2)">
+                                        <path
+                                            d="M24 0.625C13.2969 0.625 4.625 9.29688 4.625 20C4.625 30.7031 13.2969 39.375 24 39.375C34.7031 39.375 43.375 30.7031 43.375 20C43.375 9.29688 34.7031 0.625 24 0.625ZM33.0391 21.875L19.2891 29.7656C18.0547 30.4531 16.5 29.5703 16.5 28.125V11.875C16.5 10.4375 18.0469 9.54688 19.2891 10.2344L33.0391 18.5938C34.3203 19.3125 34.3203 21.1641 33.0391 21.875Z"
+                                            fill="white" fill-opacity="0.8" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_31_2" x="0" y="0" width="48" height="48"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dy="4" />
+                                            <feGaussianBlur stdDeviation="2" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_31_2" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_31_2"
+                                                result="shape" />
+                                        </filter>
+                                        <clipPath id="clip0_31_2">
+                                            <rect width="40" height="40" fill="white" transform="translate(4)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_content-top">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="textbox">
+                            <p class="text">BẠN CẦN TƯ VẤN DỊCH VỤ, BÁO GIÁ THI CÔNG</p>
+                            <p class="title">GỌI NGAY, ĐỂ ĐƯỢC HỖ TRỢ NHANH CHÓNG</p>
+                        </div>
+                        <div class="btn">
+                            <a href="tel:09 75 457 809" class="text">GỌI 09 75 457 809</a>
+                            <div class="arrow">
+                                <img src="./img/next (8) 1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_content-cent">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="logo">
+                            <a href="./" class="logoimg">
+                                <img src="./img/logo (1) 1.png" alt="">
+                            </a>
+                            <p class="slogan">Hãy kết nối với chúng tôi!</p>
+                            <div class="social-ic">
+                                <a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5 1H2.5C2.10218 1 1.72064 1.15804 1.43934 1.43934C1.15804 1.72064 1 2.10218 1 2.5L1 13.5C1 13.8978 1.15804 14.2794 1.43934 14.5607C1.72064 14.842 2.10218 15 2.5 15H6.78906V10.2403H4.82031V8H6.78906V6.2925C6.78906 4.35031 7.94531 3.2775 9.71625 3.2775C10.5644 3.2775 11.4513 3.42875 11.4513 3.42875V5.335H10.4741C9.51125 5.335 9.21094 5.9325 9.21094 6.54531V8H11.3603L11.0166 10.2403H9.21094V15H13.5C13.8978 15 14.2794 14.842 14.5607 14.5607C14.842 14.2794 15 13.8978 15 13.5V2.5C15 2.10218 14.842 1.72064 14.5607 1.43934C14.2794 1.15804 13.8978 1 13.5 1Z"
+                                            fill="#F5880B" />
+                                    </svg>
+
+                                </a>
+                                <a href="#">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.3553 4.741C14.3655 4.88313 14.3655 5.02529 14.3655 5.16741C14.3655 9.50241 11.066 14.4973 5.03553 14.4973C3.17766 14.4973 1.45178 13.9593 0 13.0253C0.263969 13.0557 0.51775 13.0659 0.791875 13.0659C2.32484 13.0659 3.73603 12.5481 4.86294 11.6649C3.42131 11.6344 2.21319 10.6903 1.79694 9.39075C2 9.42119 2.20303 9.4415 2.41625 9.4415C2.71066 9.4415 3.00509 9.40088 3.27919 9.32985C1.77666 9.02525 0.649719 7.70547 0.649719 6.11157V6.07097C1.08625 6.31463 1.59391 6.46691 2.13194 6.48719C1.24869 5.89835 0.670031 4.89329 0.670031 3.75622C0.670031 3.1471 0.832437 2.58872 1.11672 2.10141C2.73094 4.09125 5.15734 5.39072 7.87812 5.53288C7.82737 5.28922 7.79691 5.03544 7.79691 4.78163C7.79691 2.9745 9.25884 1.50244 11.0761 1.50244C12.0202 1.50244 12.873 1.89838 13.472 2.53797C14.2131 2.39585 14.9238 2.12172 15.5532 1.7461C15.3096 2.50754 14.7918 3.14713 14.1116 3.55319C14.7715 3.48216 15.4111 3.29938 15.9999 3.0456C15.5533 3.69532 14.9949 4.27397 14.3553 4.741Z"
+                                            fill="#F5880B" />
+                                    </svg>
+
+                                </a>
+                                <a href="#">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_33_100)">
+                                            <path
+                                                d="M15.75 8C15.75 12.2812 12.2812 15.75 8 15.75C7.2 15.75 6.43125 15.6281 5.70625 15.4031C6.02188 14.8875 6.49375 14.0437 6.66875 13.3719C6.7625 13.0094 7.15 11.5281 7.15 11.5281C7.40313 12.0094 8.14062 12.4187 8.925 12.4187C11.2625 12.4187 12.9469 10.2688 12.9469 7.59688C12.9469 5.0375 10.8562 3.12188 8.16875 3.12188C4.825 3.12188 3.04688 5.36562 3.04688 7.8125C3.04688 8.95 3.65313 10.3656 4.61875 10.8156C4.76562 10.8844 4.84375 10.8531 4.87813 10.7125C4.90313 10.6062 5.03438 10.0781 5.09375 9.83438C5.1125 9.75625 5.10313 9.6875 5.04063 9.6125C4.725 9.22188 4.46875 8.50937 4.46875 7.84375C4.46875 6.13438 5.7625 4.48125 7.96875 4.48125C9.87187 4.48125 11.2063 5.77812 11.2063 7.63438C11.2063 9.73125 10.1469 11.1844 8.76875 11.1844C8.00938 11.1844 7.4375 10.5563 7.62187 9.78438C7.84062 8.8625 8.2625 7.86875 8.2625 7.20312C8.2625 6.60938 7.94375 6.1125 7.28125 6.1125C6.50313 6.1125 5.87813 6.91563 5.87813 7.99375C5.87813 8.68125 6.10938 9.14375 6.10938 9.14375C6.10938 9.14375 5.34375 12.3875 5.20312 12.9937C5.04688 13.6625 5.10938 14.6062 5.175 15.2188C2.29375 14.0906 0.25 11.2844 0.25 8C0.25 3.71875 3.71875 0.25 8 0.25C12.2812 0.25 15.75 3.71875 15.75 8Z"
+                                                fill="#F5880B" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_33_100">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.13375 14.0002H1.23125V4.6533H4.13375V14.0002ZM2.68094 3.3783C1.75281 3.3783 1 2.60955 1 1.68143C1 1.23561 1.1771 0.80806 1.49234 0.492823C1.80757 0.177587 2.23513 0.000488281 2.68094 0.000488281C3.12675 0.000488281 3.5543 0.177587 3.86954 0.492823C4.18478 0.80806 4.36188 1.23561 4.36188 1.68143C4.36188 2.60955 3.60875 3.3783 2.68094 3.3783ZM14.9969 14.0002H12.1006V9.45018C12.1006 8.3658 12.0787 6.97518 10.5916 6.97518C9.0825 6.97518 8.85125 8.1533 8.85125 9.37205V14.0002H5.95188V4.6533H8.73562V5.9283H8.77625C9.16375 5.19393 10.1103 4.41893 11.5225 4.41893C14.46 4.41893 15 6.3533 15 8.8658V14.0002H14.9969Z"
+                                            fill="#F5880B" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.1389 4.15844C15.2417 3.81122 15.1389 3.55566 14.6444 3.55566H13.0083C12.5917 3.55566 12.4 3.77511 12.2972 4.01955C12.2972 4.01955 11.4639 6.05011 10.2861 7.36677C9.90555 7.74733 9.73055 7.86955 9.52222 7.86955C9.41944 7.86955 9.26111 7.74733 9.26111 7.40011V4.15844C9.26111 3.74178 9.14444 3.55566 8.79999 3.55566H6.22777C5.96666 3.55566 5.81111 3.75011 5.81111 3.93066C5.81111 4.32511 6.4 4.41678 6.46111 5.52789V7.939C6.46111 8.46677 6.36666 8.564 6.15833 8.564C5.60277 8.564 4.25277 6.52511 3.45277 4.19178C3.29166 3.739 3.13333 3.55566 2.71388 3.55566H1.07777C0.611107 3.55566 0.516663 3.77511 0.516663 4.01955C0.516663 4.45289 1.07222 6.60566 3.10277 9.45011C4.45555 11.3918 6.36111 12.4446 8.09444 12.4446C9.13611 12.4446 9.26388 12.2112 9.26388 11.8084C9.26388 9.95289 9.16944 9.77789 9.69166 9.77789C9.93333 9.77789 10.35 9.90011 11.3222 10.8362C12.4333 11.9473 12.6167 12.4446 13.2389 12.4446H14.875C15.3417 12.4446 15.5778 12.2112 15.4417 11.7501C15.1306 10.7807 13.0278 8.78622 12.9333 8.65289C12.6917 8.34177 12.7611 8.20289 12.9333 7.92511C12.9361 7.92233 14.9333 5.11122 15.1389 4.15844Z"
+                                            fill="#F5880B" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">ĐẬP PHÁ MINH ĐỨC</h3>
+                                <a href="mailto:dapphathaodominhduc@gmail.com" class="desc">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.6969 5.9625C15.8187 5.86563 16 5.95625 16 6.10938V12.5C16 13.3281 15.3281 14 14.5 14H1.5C0.671875 14 0 13.3281 0 12.5V6.1125C0 5.95625 0.178125 5.86875 0.303125 5.96562C1.00312 6.50937 1.93125 7.2 5.11875 9.51562C5.77813 9.99687 6.89062 11.0094 8 11.0031C9.11563 11.0125 10.25 9.97813 10.8844 9.51562C14.0719 7.2 14.9969 6.50625 15.6969 5.9625ZM8 10C8.725 10.0125 9.76875 9.0875 10.2937 8.70625C14.4406 5.69688 14.7562 5.43437 15.7125 4.68437C15.8937 4.54375 16 4.325 16 4.09375V3.5C16 2.67188 15.3281 2 14.5 2H1.5C0.671875 2 0 2.67188 0 3.5V4.09375C0 4.325 0.10625 4.54062 0.2875 4.68437C1.24375 5.43125 1.55938 5.69688 5.70625 8.70625C6.23125 9.0875 7.275 10.0125 8 10Z"
+                                            fill="#EDEDED" />
+                                    </svg>
+                                    <span>Email: dapphathaodominhduc@gmail.com</span>
+                                </a>
+                                <a href="tel:0975458809" class="desc">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_33_55)">
+                                            <path
+                                                d="M15.5434 11.3065L12.0434 9.80645C11.8939 9.74273 11.7277 9.72931 11.5699 9.7682C11.4121 9.80709 11.2712 9.89618 11.1684 10.0221L9.61844 11.9158C7.18586 10.7689 5.22819 8.81122 4.08125 6.37864L5.975 4.82864C6.10115 4.72604 6.19044 4.58513 6.22934 4.42725C6.26825 4.26937 6.25466 4.10311 6.19063 3.95364L4.69063 0.453642C4.62035 0.29252 4.49605 0.160969 4.33917 0.0816733C4.18229 0.00237739 4.00266 -0.0196931 3.83125 0.0192674L0.58125 0.769267C0.41599 0.807429 0.268545 0.90048 0.16298 1.03323C0.0574141 1.16598 -3.80691e-05 1.3306 1.89256e-08 1.5002C1.89256e-08 9.51583 6.49687 16.0002 14.5 16.0002C14.6697 16.0003 14.8343 15.9429 14.9672 15.8373C15.1 15.7318 15.1931 15.5843 15.2312 15.419L15.9812 12.169C16.02 11.9967 15.9974 11.8164 15.9175 11.6589C15.8376 11.5015 15.7053 11.3769 15.5434 11.3065Z"
+                                                fill="#EDEDED" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_33_55">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>Hotline: 0975 458 809</span>
+                                </a>
+                                <a href="#" class="desc">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_33_59)">
+                                            <path
+                                                d="M7.38338 15.6772C2.84281 9.09472 2 8.41916 2 6C2 2.68628 4.68628 0 8 0C11.3137 0 14 2.68628 14 6C14 8.41916 13.1572 9.09472 8.61662 15.6772C8.31866 16.1076 7.68131 16.1076 7.38338 15.6772ZM8 8.5C9.38072 8.5 10.5 7.38072 10.5 6C10.5 4.61928 9.38072 3.5 8 3.5C6.61928 3.5 5.5 4.61928 5.5 6C5.5 7.38072 6.61928 8.5 8 8.5Z"
+                                                fill="#EDEDED" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_33_59">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>Địa chỉ:</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <p class="name">Liên kết nhanh</p>
+                                <p class="desc">
+                                    <img src="./img/next (10) 1.svg" alt="">
+                                    <span class="text">Dịch vụ</span>
+                                </p>
+                                <p class="desc">
+                                    <img src="./img/next (10) 1.svg" alt="">
+                                    <span class="text">Dự án</span>
+                                </p>
+                                <p class="desc">
+                                    <img src="./img/next (10) 1.svg" alt="">
+                                    <span class="text">Liên hệ</span>
+                                </p>
+                                <p class="desc">
+                                    <img src="./img/next (10) 1.svg" alt="">
+                                    <span class="text">Giới thiệu</span>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="name">Về chúng tôi</p>
+                                <p class="desc">Với đội ngũ nhân viên lành nghề chúng tôi tự tin hoàn thành tốt mọi công
+                                    trình nhỏ và lớn một cách tốt nhất.</p>
+                                <p class="desc">Hãy liên hệ ngay nếu bạn đang tìm dịch vụ tháo dỡ uy tín nhé!</p>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <p class="name">Mạng xã hội</p>
+                            <p class="title">Panpage</p>
+                            <img src="./img/Rectangle 54.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_content-bot">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="dot">
+                            <div class="square"></div>
+                        </div>
+                        <div class="coppyright">2023 Copyright © Đập Phá Minh Đức . All rights reserved. Design by
+                            sotagroup.vn
+                        </div>
+                        <div class="dot -dfr">
+                            <div class="square"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/libs/simplescroll.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+
+</body>
+
+</html>

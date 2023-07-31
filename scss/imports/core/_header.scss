@@ -1,0 +1,151 @@
+// css header
+.header {
+    // height: 200px;
+    background: $black-cl;
+    color: $white-cl;
+    overflow: hidden;
+    &_content {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: space-between;
+        &-logo {
+            padding-left: clamp(15px, calc(((100vw - var(--container-width)) / 2)), 9999px);
+        }
+        &-wrap {
+            padding-right: clamp(15px, calc(((100vw - var(--container-width)) / 2)), 9999px);
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .name {
+                    color: $orange-cl;
+                    font-family: "Saira", sans-serif;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 42px;
+                }
+                .wrap-right {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    gap: 60px;
+                    &::after {
+                        position: absolute;
+                        height: 57px;
+                        width: 1px;
+                        background: #cdcdcd;
+                        content: "";
+                        left: 55%;
+                        transform: translateX(-50%) rotate(40deg);
+                    }
+                    .phone {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    .social {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        svg {
+                            path {
+                                transition: 0.4s;
+                            }
+                            &:hover {
+                                path {
+                                    fill: $orange-cl;
+                                    transition: 0.4s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 120%;
+                    height: 1px;
+                    background: #cdcdcd;
+                    top: 0;
+                    right: -170px;
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 50px;
+                    li {
+                        margin: 12px 0;
+                        &.active {
+                            border-radius: 15px;
+                            background: $orange-cl;
+                            padding: 3px 21px;
+                        }
+                        a {
+                            text-transform: uppercase;
+                            color: $white-cl;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 24px;
+                        }
+                    }
+                }
+                .search {
+                    margin-left: 40px;
+                    position: relative;
+                    input {
+                        background: transparent;
+                        border: none;
+                        // outline: none;
+                        font-style: italic;
+                        border-bottom: 1px solid #cdcdcd;
+                        padding-bottom: 6px;
+                    }
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 15px;
+                        height: 15px;
+                        right: 10px;
+                    }
+                }
+                .abssvg {
+                    height: 125%;
+                    width: 50px;
+                    position: absolute;
+                    left: -51px;
+                    top: 9px;
+                    content: "";
+                    clip-path: polygon(0 0, 100% 0, 0 100%);
+                    border-left: 1px solid #fff;
+                    transform: rotate(40deg);
+                }
+            }
+        }
+    }
+    @media (max-width: 1120px) {
+        // CSS responsive tablet
+        &_content {
+            justify-content: center;
+            &-logo {
+                margin-top: 10px;
+                padding-left: clamp(15px, calc(((100vw - var(--container-width)) / 2)), 9999px);
+            }
+            &-wrap {
+                display: none;
+            }
+        }
+    }
+    @include xs {
+        // CSS responsive mobile
+    }
+}
